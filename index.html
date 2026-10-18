@@ -3,82 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вардуи Погосян — коммерческий дизайнер, мерчандайзер</title>
+    <title>Имя Фамилия — коммерческий дизайнер</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="card">
-        <!-- Фото -->
-        <div class="photo-wrapper">
-            <img src="photo.jpg" alt="Фото дизайнера" class="photo">
+    <!-- Навигация -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Имя<span>Фамилия</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero секция с фото -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="photo-wrapper">
+                <img src="photo.jpg" alt="Фото дизайнера" class="photo">
+            </div>
+            <h1>Имя <span class="accent">Фамилия</span></h1>
+            <p class="subtitle">Коммерческий дизайнер — проектирую магазины и коммерческие пространства</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Связаться со мной</a>
+                <a href="#about" class="btn btn-outline">Подробнее</a>
+            </div>
         </div>
+    </section>
 
-        <!-- Имя и профессия -->
-        <h1 class="name">Вардуи Погосян</h1>
-        <p class="role">Коммерческий дизайнер, мерчандайзер</p>
-
-        <!-- Описание деятельности -->
-        <div class="about">
-            <p>
-                Занимаюсь проектированием магазинов и других коммерческих пространств.
-                Создаю функциональные и привлекательные интерьеры, которые работают на бизнес:
-                привлекают покупателей, повышают средний чек и формируют узнаваемый образ бренда.
-            </p>
-            <p>
-                От концепции и планировки до авторского надзора — полный цикл проектирования
-                под ключ.
-            </p>
+    <!-- Обо мне -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-text">
+                <p>
+                    Занимаюсь проектированием магазинов и других коммерческих пространств.
+                    Создаю функциональные и привлекательные интерьеры, которые работают на бизнес:
+                    привлекают покупателей, повышают средний чек и формируют узнаваемый образ бренда.
+                </p>
+                <p>
+                    От концепции и планировки до авторского надзора — полный цикл проектирования
+                    под ключ.
+                </p>
+            </div>
         </div>
+    </section>
 
-        <!-- Контакты -->
-        <div class="contacts">
-            <h2 class="contacts-title">Связаться со мной</h2>
+    <!-- Контакты -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <p class="contact-intro">Свяжитесь со мной удобным способом — отвечу быстро.</p>
+            <div class="contacts-list">
+                <a href="tel:+70000000000" class="contact-item">
+                    <span class="icon">📞</span>
+                    <div class="contact-info">
+                        <span class="contact-label">Телефон</span>
+                        <span class="contact-value">+7 (000) 000-00-00</span>
+                    </div>
+                </a>
 
-            <a href="tel:+70000000000" class="contact-item">
-                <span class="icon">📞</span>
-                <div class="contact-info">
-                    <span class="contact-label">Телефон</span>
-                    <span class="contact-value">+7 (000) 000-00-00</span>
-                </div>
-            </a>
+                <a href="mailto:you@example.com" class="contact-item">
+                    <span class="icon">✉️</span>
+                    <div class="contact-info">
+                        <span class="contact-label">Почта</span>
+                        <span class="contact-value">you@example.com</span>
+                    </div>
+                </a>
 
-            <a href="mailto:you@example.com" class="contact-item">
-                <span class="icon">✉️</span>
-                <div class="contact-info">
-                    <span class="contact-label">Почта</span>
-                    <span class="contact-value">you@example.com</span>
-                </div>
-            </a>
+                <a href="https://t.me/username" target="_blank" rel="noopener" class="contact-item">
+                    <span class="icon">✈️</span>
+                    <div class="contact-info">
+                        <span class="contact-label">Telegram</span>
+                        <span class="contact-value">@username</span>
+                    </div>
+                </a>
 
-            <a href="https://t.me/username" target="_blank" rel="noopener" class="contact-item">
-                <span class="icon">✈️</span>
-                <div class="contact-info">
-                    <span class="contact-label">Telegram</span>
-                    <span class="contact-value">@username</span>
-                </div>
-            </a>
+                <a href="https://max.ru/u/username" target="_blank" rel="noopener" class="contact-item">
+                    <span class="icon">💬</span>
+                    <div class="contact-info">
+                        <span class="contact-label">MAX</span>
+                        <span class="contact-value">@username</span>
+                    </div>
+                </a>
 
-            <a href="https://max.ru/u/username" target="_blank" rel="noopener" class="contact-item">
-                <span class="icon">💬</span>
-                <div class="contact-info">
-                    <span class="contact-label">MAX</span>
-                    <span class="contact-value">@username</span>
-                </div>
-            </a>
-
-            <a href="https://wa.me/70000000000" target="_blank" rel="noopener" class="contact-item">
-                <span class="icon">🟢</span>
-                <div class="contact-info">
-                    <span class="contact-label">WhatsApp</span>
-                    <span class="contact-value">+7 (000) 000-00-00</span>
-                </div>
-            </a>
+                <a href="https://wa.me/70000000000" target="_blank" rel="noopener" class="contact-item">
+                    <span class="icon">🟢</span>
+                    <div class="contact-info">
+                        <span class="contact-label">WhatsApp</span>
+                        <span class="contact-value">+7 (000) 000-00-00</span>
+                    </div>
+                </a>
+            </div>
         </div>
-    </main>
+    </section>
 
+    <!-- Футер -->
     <footer class="footer">
-        © 2024 Имя Фамилия — коммерческий дизайнер
+        <div class="container">
+            <p>© 2024 Имя Фамилия — коммерческий дизайнер. Сделано с ❤️ на GitHub Pages.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
