@@ -3,103 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт | Портфолио</title>
+    <title>Вардуи Погосян — коммерческий дизайнер, мерчандайзер</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Навигация -->
-    <header class="header">
-        <nav class="nav container">
-            <a href="#" class="logo">Мой<span>Сайт</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#projects">Проекты</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero секция -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>Привет, я <span class="accent">Разработчик</span></h1>
-            <p class="subtitle">Создаю современные сайты и приложения. Добро пожаловать в моё портфолио.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
-                <a href="#contact" class="btn btn-outline">Связаться</a>
-            </div>
+    <main class="card">
+        <!-- Фото -->
+        <div class="photo-wrapper">
+            <img src="photo.jpg" alt="Фото дизайнера" class="photo">
         </div>
-    </section>
 
-    <!-- Обо мне -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">Обо мне</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>Я увлекаюсь веб-разработкой и созданием удобных интерфейсов. Работаю с HTML, CSS, JavaScript, а также современными фреймворками.</p>
-                    <p>Этот сайт размещён на GitHub Pages — отличный способ бесплатно показать свои проекты миру.</p>
+        <!-- Имя и профессия -->
+        <h1 class="name">Вардуи Погосян</h1>
+        <p class="role">Коммерческий дизайнер, мерчандайзер</p>
+
+        <!-- Описание деятельности -->
+        <div class="about">
+            <p>
+                Занимаюсь проектированием магазинов и других коммерческих пространств.
+                Создаю функциональные и привлекательные интерьеры, которые работают на бизнес:
+                привлекают покупателей, повышают средний чек и формируют узнаваемый образ бренда.
+            </p>
+            <p>
+                От концепции и планировки до авторского надзора — полный цикл проектирования
+                под ключ.
+            </p>
+        </div>
+
+        <!-- Контакты -->
+        <div class="contacts">
+            <h2 class="contacts-title">Связаться со мной</h2>
+
+            <a href="tel:+70000000000" class="contact-item">
+                <span class="icon">📞</span>
+                <div class="contact-info">
+                    <span class="contact-label">Телефон</span>
+                    <span class="contact-value">+7 (000) 000-00-00</span>
                 </div>
-                <div class="skills">
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Python</span>
+            </a>
+
+            <a href="mailto:you@example.com" class="contact-item">
+                <span class="icon">✉️</span>
+                <div class="contact-info">
+                    <span class="contact-label">Почта</span>
+                    <span class="contact-value">you@example.com</span>
                 </div>
-            </div>
-        </div>
-    </section>
+            </a>
 
-    <!-- Проекты -->
-    <section id="projects" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Проекты</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-icon">🚀</div>
-                    <h3>Проект 1</h3>
-                    <p>Краткое описание проекта — что он делает и какие технологии использованы.</p>
-                    <a href="#" class="project-link">Подробнее →</a>
-                </article>
-                <article class="project-card">
-                    <div class="project-icon">💡</div>
-                    <h3>Проект 2</h3>
-                    <p>Краткое описание проекта — что он делает и какие технологии использованы.</p>
-                    <a href="#" class="project-link">Подробнее →</a>
-                </article>
-                <article class="project-card">
-                    <div class="project-icon">🎨</div>
-                    <h3>Проект 3</h3>
-                    <p>Краткое описание проекта — что он делает и какие технологии использованы.</p>
-                    <a href="#" class="project-link">Подробнее →</a>
-                </article>
-            </div>
-        </div>
-    </section>
+            <a href="https://t.me/username" target="_blank" rel="noopener" class="contact-item">
+                <span class="icon">✈️</span>
+                <div class="contact-info">
+                    <span class="contact-label">Telegram</span>
+                    <span class="contact-value">@username</span>
+                </div>
+            </a>
 
-    <!-- Контакты -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Контакты</h2>
-            <p class="contact-intro">Хотите связаться? Напишите мне на почту или найдите в соцсетях.</p>
-            <div class="contact-links">
-                <a href="mailto:you@example.com" class="contact-link">📧 you@example.com</a>
-                <a href="https://github.com/username" class="contact-link">🐙 GitHub</a>
-                <a href="https://t.me/username" class="contact-link">✈️ Telegram</a>
-            </div>
-        </div>
-    </section>
+            <a href="https://max.ru/u/username" target="_blank" rel="noopener" class="contact-item">
+                <span class="icon">💬</span>
+                <div class="contact-info">
+                    <span class="contact-label">MAX</span>
+                    <span class="contact-value">@username</span>
+                </div>
+            </a>
 
-    <!-- Футер -->
+            <a href="https://wa.me/70000000000" target="_blank" rel="noopener" class="contact-item">
+                <span class="icon">🟢</span>
+                <div class="contact-info">
+                    <span class="contact-label">WhatsApp</span>
+                    <span class="contact-value">+7 (000) 000-00-00</span>
+                </div>
+            </a>
+        </div>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <p>© 2024 Мой сайт. Сделано с ❤️ на GitHub Pages.</p>
-        </div>
+        © 2024 Имя Фамилия — коммерческий дизайнер
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
