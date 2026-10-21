@@ -314,8 +314,8 @@ body {
 
 /* Контейнер иконки — фиксированный размер */
 .icon {
-    width: 44px;
-    height: 44px;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -323,7 +323,7 @@ body {
     border-radius: 12px;
     flex-shrink: 0;
     overflow: hidden;
-    padding: 8px;
+    padding: 6px;
     box-sizing: border-box;
 }
 
