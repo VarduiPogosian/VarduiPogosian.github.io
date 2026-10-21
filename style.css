@@ -314,12 +314,16 @@ body {
 
 /* Контейнер иконки — фиксированный размер */
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--pink), var(--purple));
+    background: linear-gradient(
+        135deg,
+        rgba(255, 45, 155, 0.12),
+        rgba(139, 47, 255, 0.12)
+    );
     border-radius: 12px;
     flex-shrink: 0;
     overflow: hidden;
