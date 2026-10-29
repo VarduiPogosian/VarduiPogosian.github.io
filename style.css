@@ -391,7 +391,7 @@ body {
 
 .justify {
     test-align: justify;
-    text-align-last: left;
+    text-align-last: center;
     hyphens: auto;
 }
 
