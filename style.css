@@ -389,6 +389,12 @@ body {
     border-radius: 2px;
 }
 
+.justify {
+    test-align: justify;
+    text-align-last: left;
+    hyphens: auto;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .nav-links {
